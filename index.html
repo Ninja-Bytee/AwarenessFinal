@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fell for the Trap? · وقعت في الفخ؟</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#f2fbfc;--text:#0e1518;--muted:#41545a;--accent:#0b8d95;--accent-bg:#1ecad3;--on-accent:#0e1518;--card:#ffffff;--line:#c9e6e9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1518;--text:#ffffff;--muted:#a9bcc1;--accent:#1ecad3;--accent-bg:#1ecad3;--on-accent:#0e1518;--card:#162126;--line:#26373d}}
+:root[data-theme="dark"]{--bg:#0e1518;--text:#ffffff;--muted:#a9bcc1;--accent:#1ecad3;--accent-bg:#1ecad3;--on-accent:#0e1518;--card:#162126;--line:#26373d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI","Noto Sans",Arial,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
+html[lang=ar] body,html[lang=ar] button{font-family:"IBM Plex Sans Arabic","Noto Sans Arabic","Segoe UI",Tahoma,sans-serif;line-height:1.85}
+html[lang=ar] h1,html[lang=ar] .title,html[lang=ar] h2,html[lang=ar] h3,html[lang=ar] .btn,html[lang=ar] .foot,html[lang=ar] .tag,html[lang=ar] .card b{font-weight:700}
+html[lang=ar] h1,html[lang=ar] .title,html[lang=ar] h2,html[lang=ar] h3{line-height:1.35}
+html[lang=ar] .tag,html[lang=ar] .brand{letter-spacing:0}
+html[lang=ar] .lead{font-size:20px}
+html[lang=en] .ar,html[lang=ar] .en{display:none!important}
+.wrap{max-width:720px;margin:0 auto;padding:16px 20px 48px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:6px 0 14px}
+.brand{font-size:12px;letter-spacing:2px;font-weight:700;color:var(--accent)}
+.lang{border:2px solid var(--accent);background:transparent;color:var(--accent);border-radius:20px;padding:4px 16px;font:inherit;font-weight:700;font-size:14px;line-height:1.6;cursor:pointer}
+.view{display:none}.view.on{display:block}
+.hero{text-align:center;padding:28px 0 8px}
+.shield{width:112px;height:112px;margin:0 auto 18px;position:relative}
+.shield svg{width:100%;height:100%;position:relative;z-index:1}
+.ring{position:absolute;left:0;top:0;right:0;bottom:0;border-radius:50%;border:3px solid #d91f26;animation:pulse 1.8s ease-out infinite}
+.ring.r2{animation-delay:.9s}
+@keyframes pulse{0%{transform:scale(.8);opacity:.9}100%{transform:scale(1.7);opacity:0}}
+.tag{display:inline-block;background:#d91f26;color:#ffffff;font-weight:800;font-size:13px;letter-spacing:3px;padding:2px 14px;border-radius:4px;margin-bottom:14px}
+h1{font-size:clamp(34px,9vw,56px);line-height:1.15;margin:0 0 16px;color:var(--accent);font-weight:800}
+.lead{font-size:19px;margin:0 auto 22px;max-width:560px}
+.safe{background:var(--card);border:2px solid var(--accent);border-radius:16px;padding:16px 18px;text-align:start;margin:0 auto 26px;max-width:560px;font-size:16px}
+.safe b{color:var(--accent)}
+.btn{display:block;width:100%;max-width:420px;margin:0 auto;background:var(--accent-bg);color:var(--on-accent);border:0;border-radius:32px;padding:12px 24px;font:inherit;font-size:18px;font-weight:800;cursor:pointer;text-align:center}
+.btn.ghost{background:transparent;color:var(--accent);border:2px solid var(--accent);margin-top:20px}
+h2{font-size:24px;margin:32px 0 12px;color:var(--accent)}
+.title{font-size:clamp(28px,7vw,38px);line-height:1.2;margin:10px 0 6px;font-weight:800}
+p{margin:0 0 12px}
+.callout{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:20px}
+.callout p:last-child{margin-bottom:0}
+ul.flags{list-style:none;margin:0;padding:0}
+ul.flags li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 14px 11px 44px;margin-bottom:9px;position:relative}
+html[dir=rtl] ul.flags li{padding:11px 44px 11px 14px}
+ul.flags li:before{content:"!";position:absolute;inset-inline-start:12px;top:12px;width:24px;height:24px;border-radius:50%;background:var(--accent-bg);color:var(--on-accent);font-weight:800;text-align:center;line-height:24px}
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 14px 11px 52px;margin-bottom:9px;position:relative}
+html[dir=rtl] ol.steps li{padding:11px 52px 11px 14px}
+ol.steps li:before{content:counter(s);position:absolute;inset-inline-start:12px;top:12px;width:30px;height:30px;border-radius:8px;background:var(--accent-bg);color:var(--on-accent);font-weight:800;text-align:center;line-height:30px}
+.alert{background:var(--accent-bg);color:var(--on-accent);border-radius:16px;padding:18px 20px;margin-top:30px}
+.alert h3{margin:0 0 6px;font-size:21px}
+.alert p{margin:0 0 6px}
+.foot{text-align:center;margin-top:34px;font-size:24px;font-weight:800;color:var(--accent)}
+.small{color:var(--muted);font-size:14px;margin-top:6px}
+@media (prefers-reduced-motion:reduce){.ring{animation:none;opacity:.5}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <span class="brand"><span class="en">CYBERSECURITY AWARENESS MONTH</span><span class="ar">شهر التوعية بالأمن السيبراني</span></span>
+    <button class="lang" id="lang" type="button"><span class="en">العربية</span><span class="ar">English</span></button>
+  </div>
+
+  <section class="view on" id="v-attack">
+    <div class="hero">
+      <div class="shield">
+        <div class="ring"></div><div class="ring r2"></div>
+        <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 88 20v28c0 22-15 38-38 46C27 86 12 70 12 48V20z" fill="#d91f26"/><path d="M50 28v28" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/><circle cx="50" cy="71" r="5.5" fill="#ffffff"/></svg>
+      </div>
+      <div class="tag"><span class="en">CYBERSECURITY EXERCISE</span><span class="ar">تمرين أمني توعوي</span></div>
+      <h1>
+        <span class="en">🥷 Fell for the Trap?<br>Let’s Show You How to Dodge It!</span>
+        <span class="ar">🥷 وقعت في الفخ؟<br>خلّنا نعلّمك كيف تتفاداه!</span>
+      </h1>
+      <p class="lead">
+        <span class="en">Scanned a QR code for free Wi-Fi… but not everything free is worth the risk 👀</span>
+        <span class="ar">مسحت QR عشان واي فاي مجاني… لكن مو كل شيء مجاني يستاهل الثقة 👀</span>
+      </p>
+      <div class="safe">
+        <span class="en">
+          <b>As part of Cybersecurity Awareness Month, we decided to put your awareness to the test! 🔐</b><br><br>
+          By scanning the code, you’ve just taken part in a cybersecurity awareness exercise designed by our Cybersecurity Team to simulate a real phishing attempt.<br><br>
+          Don’t worry, this was just a training exercise. No data was collected, and nothing was installed on your device. The goal is to help you spot phishing attempts and know how to avoid them in real life.
+        </span>
+        <span class="ar">
+          <b>ضمن حملة شهر التوعية بالأمن السيبراني، قررنا نختبر انتباهك! 🔐</b><br><br>
+          إذا مسحت الرمز، فأنت الآن جزء من تمرين توعوي أعدّه فريق الأمن السيبراني لمحاكاة أحد أساليب التصيّد الإلكتروني.<br><br>
+          تطمن، هذا مجرد تمرين تدريبي. ما تم جمع أي بيانات منك، وما تم تثبيت أي شيء على جهازك. الهدف إنك تتعرّف على أساليب التصيّد وتعرف كيف تتفاداها في الواقع.
+        </span>
+      </div>
+      <button class="btn" id="go" type="button"><span class="en">Learn how to protect yourself »</span><span class="ar">تعرف كيف تحمي نفسك »</span></button>
+    </div>
+  </section>
+
+  <section class="view" id="v-learn">
+    <div class="title">
+      <span class="en">🥷 How Did You Fall for the Trap?</span>
+      <span class="ar">🥷 كيف وقع الفخ؟</span>
+    </div>
+
+    <div class="callout">
+      <p>
+        <span class="en">Suspicious QR codes can hide malicious links that take you to fake websites, even if they look convincing or carry a logo you recognize.</span>
+        <span class="ar">رموز QR المشبوهة ممكن تخفي روابط تنقلك إلى صفحات مزيفة، حتى لو كان شكلها مقنعًا أو تحمل شعارًا تعرفه.</span>
+      </p>
+      <p>
+        <span class="en">In this exercise, the offer was free Wi-Fi. In real life, attackers may use tempting offers or familiar logos to gain your trust and encourage you to scan a code.</span>
+        <span class="ar">في هذي التجربة، كان العرض هو واي فاي مجاني. لكن في الواقع، ممكن يستخدم المهاجمون عروضًا مغرية أو شعارات مألوفة عشان يكسبون ثقتك ويدفعونك لمسح الرمز.</span>
+      </p>
+      <p>
+        <span class="en"><b>Remember:</b> Seeing the Ninja logo or any familiar brand doesn’t mean a link is safe.</span>
+        <span class="ar"><b>تذكّر:</b> وجود شعار نينجا أو أي علامة تجارية ما يعني أن الرابط آمن.</span>
+      </p>
+    </div>
+
+    <h2>
+      <span class="en">👀 How to Spot a Suspicious QR Code</span>
+      <span class="ar">👀 كيف تكتشف الرمز المشبوه؟</span>
+    </h2>
+    <ul class="flags">
+      <li>
+        <span class="en"><b>An offer that seems too good to be true:</b> Like free Wi-Fi or an unexpected prize.</span>
+        <span class="ar"><b>عرض مغرٍ بزيادة:</b> مثل واي فاي مجاني أو جائزة غير متوقعة.</span>
+      </li>
+      <li>
+        <span class="en"><b>A code from an unknown source:</b> Especially on stickers or in public places.</span>
+        <span class="ar"><b>رمز مجهول المصدر:</b> خصوصًا إذا كان على ملصق أو في مكان عام.</span>
+      </li>
+      <li>
+        <span class="en"><b>An unfamiliar link:</b> Check the full domain name before opening it.</span>
+        <span class="ar"><b>رابط غير مألوف:</b> تأكد من اسم النطاق قبل فتحه.</span>
+      </li>
+      <li>
+        <span class="en"><b>Requests for sensitive information:</b> Never enter your password or verification code on an untrusted page.</span>
+        <span class="ar"><b>طلب بيانات حساسة:</b> لا تدخل كلمة مرورك أو رمز التحقق في صفحة غير موثوقة.</span>
+      </li>
+    </ul>
+
+    <h2>
+      <span class="en">🥷 Before You Scan… Take a Second!</span>
+      <span class="ar">🥷 قبل ما تمسح… خذ لك ثانية!</span>
+    </h2>
+    <ol class="steps">
+      <li>
+        <span class="en">Check where the QR code came from.</span>
+        <span class="ar">تأكد من مصدر رمز QR.</span>
+      </li>
+      <li>
+        <span class="en">Use a secure QR scanner app instead of your phone's camera directly to preview the link and content safely.</span>
+        <span class="ar">استخدم تطبيقًا مخصصًا لمسح الرمز بدلاً من كاميرا الجوال مباشرة، عشان تعاين الرابط وتتأكد من المحتوى قبل فتحه.</span>
+      </li>
+      <li>
+        <span class="en">Preview the link and review the full domain before opening it.</span>
+        <span class="ar">راجع الرابط وتأكد من اسم النطاق كاملًا قبل فتحه.</span>
+      </li>
+      <li>
+        <span class="en">Never enter your work credentials or verification codes on suspicious pages.</span>
+        <span class="ar">لا تدخل بيانات العمل أو رموز التحقق في صفحات مشبوهة.</span>
+      </li>
+      <li>
+        <span class="en">If you’re unsure, don’t proceed. Use official channels or check with the IT Team.</span>
+        <span class="ar">إذا شكّيت، لا تكمل. استخدم القنوات الرسمية أو اسأل فريق تقنية المعلومات.</span>
+      </li>
+    </ol>
+
+    <div class="alert">
+      <h3>
+        <span class="en">🚨 Scanned a Suspicious Code? Don’t Go Any Further!</span>
+        <span class="ar">🚨 مسحت الرمز؟ لا تكمل إذا شكّيت!</span>
+      </h3>
+      <p>
+        <span class="en">If you open a suspicious link, close the page and don’t enter any information. If you’ve already entered your password, change it immediately and report the incident to the Cybersecurity Team or IT Help Desk.</span>
+        <span class="ar">إذا فتحت رابطًا مشبوهًا، أغلق الصفحة ولا تدخل أي بيانات. وإذا أدخلت كلمة مرورك، غيّرها فورًا وبلّغ فريق الأمن السيبراني أو مكتب الدعم الفني.</span>
+      </p>
+    </div>
+
+    <div class="foot">
+      <span class="en">Stay sharp. Stay Ninja. 🥷</span>
+      <span class="ar">خلك نبيه .. خلك نينجا! 🥷</span>
+    </div>
+
+    <button class="btn ghost" id="back" type="button"><span class="en">← Back</span><span class="ar">→ العودة</span></button>
+  </section>
+</div>
+<script>
+(function(){
+  var h=document.documentElement;
+  function setLang(l){h.lang=l;h.dir=l==='ar'?'rtl':'ltr';}
+  var nav=(navigator.language||'en').toLowerCase();
+  setLang(nav.indexOf('ar')===0?'ar':'en');
+  document.getElementById('lang').addEventListener('click',function(){setLang(h.lang==='ar'?'en':'ar');});
+  var a=document.getElementById('v-attack'),l=document.getElementById('v-learn');
+  function show(n){a.className='view'+(n==='learn'?'':' on');l.className='view'+(n==='learn'?' on':'');window.scrollTo(0,0);}
+  document.getElementById('go').addEventListener('click',function(){show('learn');});
+  document.getElementById('back').addEventListener('click',function(){show('attack');});
+  if(location.hash==='#learn'){show('learn');}
+})();
+</script>
+</body>
+</html>
